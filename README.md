@@ -5,7 +5,7 @@
 
 <p align="center">
   <a href="https://armankhan.com.np">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=DC143C&center=true&vCenter=true&width=600&lines=Full-Stack+Developer+from+Kathmandu+🇳🇵;I+build+things+with+React%2C+Node+%26+Django;Currently+building+TriLearn+🎓;Turning+ideas+into+real+products" alt="Typing SVG" />
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=DC143C&center=true&vCenter=true&width=600&lines=Full-Stack+Developer+from+Kathmandu;I+build+things+with+React+and+Django;Currently+building+TriLearn;Turning+ideas+into+real+products" alt="Typing SVG" />
   </a>
 </p>
 
@@ -64,16 +64,16 @@ const arman = {
 ### 📊 GitHub Stats
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=armancore&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" alt="stats" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=armancore&layout=compact&theme=tokyonight&hide_border=true" alt="top languages" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=armancore&theme=tokyonight" alt="profile details" />
+</p>
+
+<p align="center">
+  <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=armancore&theme=tokyonight" alt="stats" />
+  <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=armancore&theme=tokyonight" alt="top languages" />
 </p>
 
 <p align="center">
   <img src="https://streak-stats.demolab.com?user=armancore&theme=tokyonight&hide_border=true" alt="streak" />
-</p>
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=armancore&theme=tokyo-night&hide_border=true&area=true" alt="activity graph" />
 </p>
 
 ---
