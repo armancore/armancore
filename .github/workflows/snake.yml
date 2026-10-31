@@ -26,6 +26,7 @@ jobs:
       # read the visit count (query_only doesn't add a view) and redraw the views pill
       - name: Update profile views badge
         run: |
+          sudo chown -R "$(id -u)" dist
           COUNT=$(curl -s "https://visitor-badge.laobi.icu/badge?page_id=armancore.armancore&query_only=true" | grep -oE '>[0-9,]+<' | tail -1 | tr -d '><,')
           python3 scripts/build.py --views "${COUNT:-0}" dist
 
