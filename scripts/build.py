@@ -97,18 +97,22 @@ def heading(num, title, right, t):
 
 
 def project(num, name, lang, lines, tags, t):
-    H = 150
-    b = [text(32, 46, num, t, 13, "accent", MONO, 700),
-         text(72, 47, name, t, 21, "ink", SANS, 700, spacing=-0.3),
-         text(868, 46, f"{lang}  ↗", t, 12, "muted", MONO, anchor="end")]
+    # half-width card; two sit side by side in the README
+    CW, H = 440, 210
+    b = [f'<rect x="0.5" y="0.5" width="{CW-1}" height="{H-1}" rx="14" fill="{t["bg"]}" stroke="{t["border"]}"/>',
+         f'<rect x="28" y="0" width="28" height="3" fill="{t["accent"]}"/>',
+         text(28, 38, num, t, 12, "accent", MONO, 700),
+         text(CW - 28, 38, f"{lang}  ↗", t, 12, "muted", MONO, anchor="end"),
+         text(28, 76, name, t, 22, "ink", SANS, 700, spacing=-0.3)]
     for i, line in enumerate(lines):
-        b.append(text(72, 76 + i * 21, line, t, 15, "muted"))
-    x = 72
+        b.append(text(28, 104 + i * 20, line, t, 14, "muted"))
+    x = 28
     for tag in tags:
-        c, w = chip(x, 112, tag, t, 11)
+        c, w = chip(x, 166, tag, t, 11)
         b.append(c)
         x += w + 8
-    return svg(H, "".join(b), t)
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{CW}" height="{H}" viewBox="0 0 {CW} {H}">'
+            f'{"".join(b)}</svg>')
 
 
 def stack(t):
@@ -144,20 +148,23 @@ def footer(t):
 
 PROJECTS = [
     ("01", "TriLearn", "JavaScript",
-     ["Self-hosted college management system: admissions, QR attendance,",
-      "marks, assignments, real-time notices and a student mobile app."],
-     ["React 19", "Express 5", "PostgreSQL", "Redis", "Socket.IO", "Expo", "Docker"]),
+     ["College management system: admissions,",
+      "QR attendance, marks, assignments and",
+      "a student mobile app."],
+     ["React", "Express", "PostgreSQL", "Socket.IO"]),
     ("02", "Sajilo Bus Ticket", "Python",
-     ["Bus booking with a Django REST API and a React frontend. Safe seat",
-      "holds, eSewa payments and printable QR tickets."],
-     ["Django REST", "React", "PostgreSQL", "JWT", "eSewa"]),
+     ["Bus booking on a Django REST API with",
+      "safe seat holds, eSewa payments and",
+      "printable QR tickets."],
+     ["Django REST", "React", "PostgreSQL", "eSewa"]),
     ("03", "Nepal Patra", "JavaScript",
-     ["A Nepal-focused news aggregator with categories, search,",
-      "bookmarks and a system-aware dark mode."],
+     ["Nepal-focused news aggregator with",
+      "categories, search, bookmarks and",
+      "dark mode."],
      ["React", "Vite", "Axios", "Tailwind CSS"]),
     ("04", "VibeTyper", "JavaScript",
      ["A modern, interactive typing speed test."],
-     ["React 19", "Vite", "Tailwind CSS"]),
+     ["React", "Vite", "Tailwind CSS"]),
 ]
 
 BUTTONS = ["portfolio", "linkedin", "instagram", "facebook"]
