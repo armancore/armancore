@@ -115,9 +115,9 @@ def project(num, name, lang, lines, tags, t):
 
 
 def stack(t):
-    rows = [("frontend", ["React", "Vite", "Tailwind CSS", "TypeScript", "JavaScript"]),
+    rows = [("frontend", ["React", "Next.js", "Vite", "Tailwind CSS", "TypeScript", "JavaScript"]),
             ("backend", ["Node.js", "Express", "Django REST", "Prisma", "Socket.IO", "JWT auth"]),
-            ("databases", ["PostgreSQL", "MS SQL Server", "Redis"]),
+            ("databases", ["PostgreSQL", "Redis"]),
             ("mobile", ["Expo"]),
             ("languages", ["JavaScript", "TypeScript", "Python", "Java", "C++"]),
             ("tools", ["Git", "GitHub Actions", "Docker", "ESLint"])]
