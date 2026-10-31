@@ -157,14 +157,15 @@ PROJECTS = [
       "safe seat holds, eSewa payments and",
       "printable QR tickets."],
      ["Django REST", "React", "PostgreSQL", "eSewa"]),
-    ("03", "Nepal Patra", "JavaScript",
+    ("03", "Portfolio", "TypeScript",
+     ["My personal portfolio site, live at",
+      "armankhan.com.np."],
+     ["React", "TypeScript", "Vite", "Tailwind CSS"]),
+    ("04", "Nepal Patra", "JavaScript",
      ["Nepal-focused news aggregator with",
       "categories, search, bookmarks and",
       "dark mode."],
      ["React", "Vite", "Axios", "Tailwind CSS"]),
-    ("04", "VibeTyper", "JavaScript",
-     ["A modern, interactive typing speed test."],
-     ["React", "Vite", "Tailwind CSS"]),
 ]
 
 BUTTONS = ["portfolio", "linkedin", "instagram", "facebook"]
