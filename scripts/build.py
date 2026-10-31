@@ -131,8 +131,12 @@ def icon_chip_w(s):
 def icon_chip(x, y, s, t):
     w = icon_chip_w(s)
     icon = ICONS[s]
+    # Simple Icons are one-colour 24px paths; multi-colour logos (Java, from Devicon) list their own parts
+    parts = icon.get("parts") or [{"fill": icon_color(icon["hex"], t), "path": icon["path"]}]
+    scale = 15 / icon.get("size", 24)
+    logo = "".join(f'<path d="{p["path"]}" fill="{p["fill"]}"/>' for p in parts)
     return (f'<rect x="{x}" y="{y}" width="{w:.0f}" height="28" rx="7" fill="{t["chip"]}" stroke="{t["border"]}"/>'
-            f'<path transform="translate({x + 11} {y + 6.5}) scale(0.625)" d="{icon["path"]}" fill="{icon_color(icon["hex"], t)}"/>'
+            f'<g transform="translate({x + 11} {y + 6.5}) scale({scale:.4f})">{logo}</g>'
             + text(x + 33, y + 18.5, s, t, 12, "ink", MONO)), w
 
 
