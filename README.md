@@ -1,98 +1,32 @@
-<!-- ============ HEADER ============ -->
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:DC143C,100:003893&height=180&section=header&text=Namaste,%20I'm%20Arman%20🙏&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38" alt="header" />
-</p>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/hero-dark.svg" /><img alt="Arman Khan, Kathmandu. Full-stack developer who builds the interface people use and the systems behind it. A trail climbs from Damak to Kathmandu to the next summit: an internship or junior role." src="assets/hero-light.svg" width="100%" /></picture>
 
-<p align="center">
-  <a href="https://armankhan.com.np">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=DC143C&center=true&vCenter=true&width=600&lines=Full-Stack+Developer+from+Kathmandu;I+build+things+with+React+and+Django;Currently+building+TriLearn;Turning+ideas+into+real+products" alt="Typing SVG" />
-  </a>
-</p>
+<a href="https://armankhan.com.np"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-portfolio-dark.svg" /><img alt="Portfolio" src="assets/btn-portfolio-light.svg" /></picture></a>
+<a href="https://www.linkedin.com/in/techiee-arman"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-linkedin-dark.svg" /><img alt="LinkedIn" src="assets/btn-linkedin-light.svg" /></picture></a>
+<a href="https://www.instagram.com/techiee.arman"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-instagram-dark.svg" /><img alt="Instagram" src="assets/btn-instagram-light.svg" /></picture></a>
+<a href="https://www.facebook.com/techiee.arman"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-facebook-dark.svg" /><img alt="Facebook" src="assets/btn-facebook-light.svg" /></picture></a>
+<img src="https://komarev.com/ghpvc/?username=armancore&label=visitors&color=c8102e&style=flat-square" alt="visitors" />
 
-<p align="center">
-  <a href="https://armankhan.com.np"><img src="https://img.shields.io/badge/Portfolio-armankhan.com.np-DC143C?style=for-the-badge&logo=googlechrome&logoColor=white" /></a>
-  <a href="https://www.linkedin.com/in/techiee-arman"><img src="https://img.shields.io/badge/LinkedIn-techiee--arman-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  <a href="https://www.instagram.com/techiee.arman"><img src="https://img.shields.io/badge/Instagram-techiee.arman-E4405F?style=for-the-badge&logo=instagram&logoColor=white" /></a>
-  <a href="https://www.facebook.com/techiee.arman"><img src="https://img.shields.io/badge/Facebook-techiee.arman-1877F2?style=for-the-badge&logo=facebook&logoColor=white" /></a>
-</p>
+From Damak, Jhapa to Kathmandu, studying IT. The part I care about most is the part nobody sees: logins, data, and APIs that still hold up when the input is wrong.
 
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=armancore&label=Profile%20views&color=003893&style=flat" alt="profile views" />
-</p>
+<br>
 
----
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-head-dark.svg" /><img alt="01 Summits: things I've built" src="assets/work-head-light.svg" width="100%" /></picture>
+<a href="https://github.com/armancore/TriLearn"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-trilearn-dark.svg" /><img alt="01 TriLearn: self-hosted college management system with admissions, QR attendance, marks, assignments, real-time notices and a student mobile app." src="assets/work-trilearn-light.svg" width="100%" /></picture></a>
+<a href="https://github.com/armancore/bus_ticket"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-sajilo-bus-ticket-dark.svg" /><img alt="02 Sajilo Bus Ticket: bus booking with a Django REST API and React frontend, safe seat holds, eSewa payments and QR tickets." src="assets/work-sajilo-bus-ticket-light.svg" width="100%" /></picture></a>
+<a href="https://github.com/armancore/Nepal-Patra"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-nepal-patra-dark.svg" /><img alt="03 Nepal Patra: a Nepal-focused news aggregator." src="assets/work-nepal-patra-light.svg" width="100%" /></picture></a>
+<a href="https://github.com/armancore/VibeTyper"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-vibetyper-dark.svg" /><img alt="04 VibeTyper: a modern, interactive typing speed test." src="assets/work-vibetyper-light.svg" width="100%" /></picture></a>
 
-### 🧑‍💻 About Me
+<sub>Also on the trail: [CineVault](https://github.com/armancore/movie-app) · [Expense Tracker](https://github.com/armancore/expense-tracker) · [portfolio](https://github.com/armancore/portfolio) · [all repos →](https://github.com/armancore?tab=repositories)</sub>
 
-```js
-const arman = {
-  location:   "Kathmandu, Nepal 🏔️",
-  role:       "Full-Stack Developer",
-  building:   "TriLearn — a college management system, intake to marksheet",
-  stack:      ["React", "Node.js", "Express", "PostgreSQL", "Django"],
-  learning:   ["TypeScript in depth", "System design", "Real-time apps"],
-  askMeAbout: ["JavaScript", "React", "REST APIs", "Python"],
-  funFact:    "I write code with a view of the Himalayas 🇳🇵",
-};
-```
+<br>
 
----
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/stack-dark.svg" /><img alt="02 Packing list. Frontend: React, Vite, Tailwind CSS, TypeScript, JavaScript. Backend: Node.js, Express, Django REST, Prisma, Socket.IO, JWT auth. Data: PostgreSQL, Redis. Mobile: Expo, React Native. Languages: JavaScript, TypeScript, Python, Java, C++. Tools: Git, GitHub Actions, Docker, ESLint." src="assets/stack-light.svg" width="100%" /></picture>
 
-### 🛠️ Tech Stack
+<br>
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=js,ts,react,nodejs,express,python,django,postgres,html,css,tailwind,git,github,vscode&perline=7" alt="tech stack" />
-</p>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/trail-head-dark.svg" /><img alt="03 Trail log: a year of commits" src="assets/trail-head-light.svg" width="100%" /></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/armancore/armancore/output/github-snake-dark.svg" /><img alt="Contribution graph being eaten by a snake" src="https://raw.githubusercontent.com/armancore/armancore/output/github-snake.svg" width="100%" /></picture>
 
----
+<br><br>
 
-### 🚀 Featured Projects
-
-| Project | What it is | Built with |
-|---|---|---|
-| 🎓 **[TriLearn](https://github.com/armancore/TriLearn)** | Production-grade college management system — student intake to marksheet in one platform | React 19 · Express 5 · PostgreSQL · Socket.IO |
-| 🌐 **[Portfolio](https://github.com/armancore/portfolio)** | My personal site — [armankhan.com.np](https://armankhan.com.np) | TypeScript |
-| ⌨️ **[VibeTyper](https://github.com/armancore/VibeTyper)** | Typing practice app | JavaScript |
-| 📰 **[Nepal-Patra](https://github.com/armancore/Nepal-Patra)** | Nepali news / content app | JavaScript |
-| 🚌 **[Sajilo Bus Ticket](https://github.com/armancore/bus_ticket)** | Bus ticketing system | Python |
-| 🎬 **[Movie App](https://github.com/armancore/movie-app)** | Browse and discover movies | JavaScript |
-
-<sub>More on my <a href="https://github.com/armancore?tab=repositories">repositories tab</a> → expense tracker, weather app, task manager, ArticleHub, e-commerce…</sub>
-
----
-
-### 📊 GitHub Stats
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=armancore&theme=tokyonight" alt="profile details" />
-</p>
-
-<p align="center">
-  <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=armancore&theme=tokyonight" alt="stats" />
-  <img height="180" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=armancore&theme=tokyonight" alt="top languages" />
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=armancore&theme=tokyonight&hide_border=true" alt="streak" />
-</p>
-
----
-
-### 🐍 Contribution Snake
-
-<p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/armancore/armancore/output/github-snake-dark.svg" />
-    <img src="https://raw.githubusercontent.com/armancore/armancore/output/github-snake.svg" alt="snake eating my contributions" />
-  </picture>
-</p>
-
----
-
-<p align="center">
-  <i>"Small commits, every day, from the roof of the world."</i> 🏔️
-</p>
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:003893,100:DC143C&height=110&section=footer" alt="footer" />
-</p>
+<a href="https://armankhan.com.np"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/footer-dark.svg" /><img alt="Let's build something. Open to internships and junior roles. Prayer flags sway along the top." src="assets/footer-light.svg" width="100%" /></picture></a>
