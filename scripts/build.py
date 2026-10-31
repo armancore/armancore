@@ -2,11 +2,15 @@
 
 Run: python scripts/build.py
 """
+import json
 from pathlib import Path
 from xml.sax.saxutils import escape
 
 OUT = Path(__file__).resolve().parent.parent / "assets"
 W = 900
+
+# logo paths + brand colours from Simple Icons (CC0), keyed by stack label
+ICONS = json.loads((Path(__file__).resolve().parent / "icons.json").read_text(encoding="utf-8"))
 
 SANS = "'Segoe UI', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Arial, sans-serif"
 MONO = "ui-monospace, SFMono-Regular, 'Cascadia Code', Consolas, 'Liberation Mono', monospace"
@@ -114,6 +118,24 @@ def project(num, name, lang, lines, tags, t):
     return svg(H, "".join(b), t)
 
 
+def icon_color(hexcode, t):
+    # near-black brand colours (Next.js, Express…) vanish on dark cards, so use the text colour
+    r, g, b = (int(hexcode[i:i + 2], 16) / 255 for i in (0, 2, 4))
+    return t["ink"] if 0.2126 * r + 0.7152 * g + 0.0722 * b < 0.2 else f"#{hexcode}"
+
+
+def icon_chip_w(s):
+    return chip_w(s) + 22
+
+
+def icon_chip(x, y, s, t):
+    w = icon_chip_w(s)
+    icon = ICONS[s]
+    return (f'<rect x="{x}" y="{y}" width="{w:.0f}" height="28" rx="7" fill="{t["chip"]}" stroke="{t["border"]}"/>'
+            f'<path transform="translate({x + 11} {y + 6.5}) scale(0.625)" d="{icon["path"]}" fill="{icon_color(icon["hex"], t)}"/>'
+            + text(x + 33, y + 18.5, s, t, 12, "ink", MONO)), w
+
+
 def stack(t):
     rows = [("frontend", ["React", "Next.js", "Vite", "Tailwind CSS", "TypeScript", "JavaScript"]),
             ("backend", ["Node.js", "Express", "Django REST", "Prisma", "Socket.IO", "JWT auth"]),
@@ -123,15 +145,15 @@ def stack(t):
             ("tools", ["Git", "GitHub Actions", "Docker", "ESLint"])]
     b, y = [], 40
     for i, (label, items) in enumerate(rows):
-        b.append(text(32, y + 13, label, t, 13, "muted", MONO))
+        b.append(text(32, y + 15, label, t, 13, "muted", MONO))
         x = 170
         for it in items:
-            if x + chip_w(it) > 868:
-                x, y = 170, y + 34
-            c, w = chip(x, y - 4, it, t)
+            if x + icon_chip_w(it) > 868:
+                x, y = 170, y + 38
+            c, w = icon_chip(x, y - 4, it, t)
             b.append(c)
             x += w + 8
-        y += 46
+        y += 50
         if i < len(rows) - 1:
             b.append(f'<line x1="32" y1="{y-14}" x2="868" y2="{y-14}" stroke="{t["border"]}"/>')
     return svg(y + 6, "".join(b), t)
