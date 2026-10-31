@@ -4,6 +4,7 @@
 <a href="https://www.linkedin.com/in/techiee-arman"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-linkedin-dark.svg?v=11" /><img alt="LinkedIn" src="assets/btn-linkedin-light.svg?v=11" /></picture></a>
 <a href="https://www.instagram.com/techiee.arman"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-instagram-dark.svg?v=11" /><img alt="Instagram" src="assets/btn-instagram-light.svg?v=11" /></picture></a>
 <a href="https://www.facebook.com/techiee.arman"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-facebook-dark.svg?v=11" /><img alt="Facebook" src="assets/btn-facebook-light.svg?v=11" /></picture></a>
+<img alt="Profile views" src="https://komarev.com/ghpvc/?username=armancore&label=profile%20views&color=d1242f&style=for-the-badge" height="30" />
 
 The part I care about most is the part nobody sees: logins, data, and APIs that still hold up when the input is wrong.
 
