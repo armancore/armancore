@@ -19,9 +19,9 @@ THEMES = {
 }
 
 STYLE = """<style>
-@keyframes glow{0%,100%{opacity:.3}12%{opacity:1}30%{opacity:.3}}
+@keyframes glow{0%,24%,100%{opacity:1}12%{opacity:.4}}
 @keyframes blink{0%,49%{opacity:1}50%,100%{opacity:0}}
-.d{animation:glow 7s ease-in-out infinite}
+.d{animation:glow 6s ease-in-out infinite}
 .caret{animation:blink 1.1s steps(1) infinite}
 </style>"""
 
@@ -55,18 +55,21 @@ def chip(x, y, s, t, size=12):
 
 
 def monogram(x0, y0, t, gap=14, r=4.2, animate=True):
-    out = []
+    # rounded-square pixels with an offset shadow; a soft diagonal wave dims them briefly
+    s = r * 2.3
+    shadow, lit, off = [], [], []
     for gi, ch in enumerate("AK"):
         for row, line in enumerate(GLYPHS[ch]):
             for col, c in enumerate(line):
-                cx = x0 + (gi * 6 + col) * gap
-                cy = y0 + row * gap
+                x = x0 + (gi * 6 + col) * gap - s / 2
+                y = y0 + row * gap - s / 2
                 if c == "#":
-                    cls = f' class="d" style="animation-delay:{(gi * 6 + col) * 0.12 + row * 0.04:.2f}s"' if animate else ""
-                    out.append(f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="{t["accent"]}"{cls}/>')
+                    shadow.append(f'<rect x="{x + r * 0.7:.1f}" y="{y + r * 0.7:.1f}" width="{s:.1f}" height="{s:.1f}" rx="{s * 0.28:.1f}" fill="{t["faint"]}"/>')
+                    cls = f' class="d" style="animation-delay:{(gi * 6 + col + row) * 0.09:.2f}s"' if animate else ""
+                    lit.append(f'<rect x="{x:.1f}" y="{y:.1f}" width="{s:.1f}" height="{s:.1f}" rx="{s * 0.28:.1f}" fill="{t["accent"]}"{cls}/>')
                 else:
-                    out.append(f'<circle cx="{cx}" cy="{cy}" r="{r * 0.55:.1f}" fill="{t["faint"]}"/>')
-    return "".join(out)
+                    off.append(f'<circle cx="{x + s / 2:.1f}" cy="{y + s / 2:.1f}" r="{r * 0.3:.1f}" fill="{t["faint"]}"/>')
+    return "".join(off + shadow + lit)
 
 
 def hero(t):
