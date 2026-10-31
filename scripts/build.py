@@ -94,6 +94,20 @@ def button(label, t):
             f'<rect x="0.5" y="0.5" width="{w-1}" height="43" rx="8" fill="{t["bg"]}" stroke="{t["border"]}"/>{b}</svg>')
 
 
+def views(count, t):
+    # pill with an offset shadow; the workflow redraws it with the latest count
+    label = "profile views"
+    num = f"{count:,}"
+    w = int((len(num) + len(label) + 1) * 13 * 0.62 + 58)
+    b = (f'<rect x="4.5" y="4.5" width="{w-1}" height="39" rx="19.5" fill="{t["faint"]}"/>'
+         f'<rect x="0.75" y="0.75" width="{w-1.5}" height="39" rx="19.5" fill="{t["bg"]}" stroke="{t["muted"]}" stroke-width="1.5"/>'
+         f'<circle cx="22" cy="20" r="8" fill="{t["accent"]}" opacity="0.25"/>'
+         f'<circle cx="22" cy="20" r="4.5" fill="{t["accent"]}"/>'
+         f'<text x="38" y="25" font-family="{MONO}" font-size="13">'
+         f'<tspan font-weight="700" fill="{t["ink"]}">{num}</tspan><tspan fill="{t["muted"]}"> {label}</tspan></text>')
+    return (f'<svg xmlns="http://www.w3.org/2000/svg" width="{w + 4}" height="44" viewBox="0 0 {w + 4} 44">{b}</svg>')
+
+
 def heading(num, title, right, t):
     H = 64
     b = [text(2, 40, num, t, 13, "accent", MONO, 700),
@@ -142,8 +156,8 @@ def icon_chip(x, y, s, t):
 
 def stack(t):
     rows = [("frontend", ["React", "Next.js", "Vite", "Tailwind CSS", "TypeScript", "JavaScript"]),
-            ("backend", ["Node.js", "Express", "Django REST", "Prisma", "Socket.IO", "JWT auth"]),
-            ("databases", ["PostgreSQL", "Redis"]),
+            ("backend", ["Node.js", "Express", "Django REST", "Socket.IO", "JWT auth"]),
+            ("databases", ["PostgreSQL", "Prisma", "Redis"]),
             ("mobile", ["Expo"]),
             ("languages", ["JavaScript", "TypeScript", "Python", "Java", "C++"]),
             ("tools", ["Git", "GitHub Actions", "Docker", "ESLint"])]
@@ -211,5 +225,17 @@ def main():
     print("built", len(list(OUT.glob("*.svg"))), "files")
 
 
+def build_views(count, out):
+    # used by the workflow: python scripts/build.py --views 123 dist
+    out = Path(out)
+    out.mkdir(exist_ok=True)
+    for mode, t in THEMES.items():
+        (out / f"views-{mode}.svg").write_text(views(count, t), encoding="utf-8")
+
+
 if __name__ == "__main__":
-    main()
+    import sys
+    if len(sys.argv) == 4 and sys.argv[1] == "--views":
+        build_views(int(sys.argv[2]), sys.argv[3])
+    else:
+        main()

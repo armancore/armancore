@@ -2,7 +2,7 @@ name: Generate contribution snake
 
 on:
   schedule:
-    - cron: "0 */12 * * *"
+    - cron: "0 */3 * * *"
   workflow_dispatch:
   push:
     branches: [main]
@@ -14,12 +14,20 @@ jobs:
   generate:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+
       - uses: Platane/snk@v3
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: |
             dist/github-snake.svg?color_snake=#d1242f&color_dots=#ececec,#f5c2c4,#ec8a8f,#de4f56,#b11a24
             dist/github-snake-dark.svg?palette=github-dark&color_snake=#ff5a5f&color_dots=#161b24,#4a1f24,#7a2a31,#c23e45,#ff5a5f
+
+      # read the visit count (query_only doesn't add a view) and redraw the views pill
+      - name: Update profile views badge
+        run: |
+          COUNT=$(curl -s "https://visitor-badge.laobi.icu/badge?page_id=armancore.armancore&query_only=true" | grep -oE '>[0-9,]+<' | tail -1 | tr -d '><,')
+          python3 scripts/build.py --views "${COUNT:-0}" dist
 
       - uses: crazy-max/ghaction-github-pages@v4
         with:
