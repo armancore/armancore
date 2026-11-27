@@ -16,7 +16,6 @@ The bug that taught me the most took a week to find. My password reset let anyon
 <a href="https://kiteen.com.np"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-kiteen-nepal-dark.svg?v=14" /><img alt="Kiteen Nepal, client work: online store and admin panel for a kids' shop in Damak." src="assets/work-kiteen-nepal-light.svg?v=14" width="100%" /></picture></a>
 <a href="https://sajilo-bus-neon.vercel.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-sajilo-bus-ticket-dark.svg?v=14" /><img alt="Sajilo Bus Ticket: bus booking with a Django REST API and React frontend, safe seat holds, eSewa payments and QR tickets." src="assets/work-sajilo-bus-ticket-light.svg?v=14" width="100%" /></picture></a>
 
-<sub>Cards open the live sites. Code: [TriLearn](https://github.com/armancore/TriLearn) · [Sajilo Bus](https://github.com/armancore/bus_ticket) · client code is private.<br>More: [Nepal Patra](https://nepal-patra.vercel.app) · [CineVault](https://cinevault-arman.vercel.app) · [this portfolio site](https://armankhan.com.np) · [all projects →](https://armankhan.com.np/projects)</sub>
 
 **Right now** I'm building websites for local businesses with Next.js and adding features to TriLearn.
 
