@@ -17,14 +17,7 @@ The bug that taught me the most took a week to find. My password reset let anyon
 <a href="https://namunatailor.vercel.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-namuna-bill-pad-dark.svg?v=13" /><img alt="Namuna Bill Pad, client work: order book for a tailoring shop in Damak." src="assets/work-namuna-bill-pad-light.svg?v=13" width="100%" /></picture></a>
 <a href="https://sajilo-bus-neon.vercel.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-sajilo-bus-ticket-dark.svg?v=13" /><img alt="Sajilo Bus Ticket: bus booking with a Django REST API and React frontend, safe seat holds, eSewa payments and QR tickets." src="assets/work-sajilo-bus-ticket-light.svg?v=13" width="100%" /></picture></a>
 
-| Project | Live | Code |
-|---|---|---|
-| TriLearn | [trilearn-arman.vercel.app](https://trilearn-arman.vercel.app) | [repo](https://github.com/armancore/TriLearn) |
-| Kiteen Nepal | [kiteen.com.np](https://kiteen.com.np) | private (client) |
-| Namuna Bill Pad | [namunatailor.vercel.app](https://namunatailor.vercel.app) | private (client) |
-| Sajilo Bus Ticket | [sajilo-bus-neon.vercel.app](https://sajilo-bus-neon.vercel.app) | [repo](https://github.com/armancore/bus_ticket) |
-
-<sub>More: [Nepal Patra](https://nepal-patra.vercel.app) · [CineVault](https://cinevault-arman.vercel.app) · [this portfolio site](https://armankhan.com.np) · [all projects →](https://armankhan.com.np/projects)</sub>
+<sub>Cards open the live sites. Code: [TriLearn](https://github.com/armancore/TriLearn) · [Sajilo Bus](https://github.com/armancore/bus_ticket) · client code is private.<br>More: [Nepal Patra](https://nepal-patra.vercel.app) · [CineVault](https://cinevault-arman.vercel.app) · [this portfolio site](https://armankhan.com.np) · [all projects →](https://armankhan.com.np/projects)</sub>
 
 **Right now** I'm building websites for local businesses with Next.js and adding features to TriLearn.
 
