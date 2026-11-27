@@ -82,7 +82,7 @@ def hero(t):
          f'<rect class="caret" x="142" y="51" width="8" height="14" fill="{t["accent"]}"/>',
          text(45, 134, "Arman Khan", t, 60, "ink", SANS, 700, spacing=-1.5),
          text(48, 174, "I build the interface people use and the systems behind it.", t, 18, "muted"),
-         text(48, 210, "full-stack  ·  javascript  ·  python  ·  sql", t, 12, "muted", MONO, spacing=0.5),
+         text(48, 210, "react  ·  next.js  ·  node.js  ·  postgresql", t, 12, "muted", MONO, spacing=0.5),
          monogram(708, 76, t)]
     return svg(H, "".join(b), t)
 
@@ -159,7 +159,7 @@ def stack(t):
             ("backend", ["Node.js", "Express", "Django REST", "Socket.IO", "JWT auth"]),
             ("databases", ["PostgreSQL", "Prisma", "Redis"]),
             ("mobile", ["Expo"]),
-            ("languages", ["JavaScript", "TypeScript", "Python", "Java", "C++"]),
+            ("languages", ["JavaScript", "TypeScript", "Python"]),
             ("tools", ["Git", "GitHub Actions", "Docker", "ESLint"])]
     b, y = [], 40
     for i, (label, items) in enumerate(rows):
@@ -186,25 +186,25 @@ def footer(t):
 
 
 PROJECTS = [
-    ("01", "TriLearn", "JavaScript",
+    ("01", "TriLearn", "live demo",
      ["Self-hosted college management system: admissions, QR attendance,",
       "marks, assignments, real-time notices and a student mobile app."],
      ["React 19", "Express 5", "PostgreSQL", "Redis", "Socket.IO", "Expo", "Docker"]),
-    ("02", "Sajilo Bus Ticket", "Python",
+    ("02", "Kiteen Nepal", "client · live",
+     ["Online store and admin panel for a kids' shop in Damak: Cash on",
+      "Delivery, Google sign-in, and product, order and category management."],
+     ["Next.js", "TypeScript", "PostgreSQL", "Prisma", "Tailwind CSS", "Clerk"]),
+    ("03", "Namuna Bill Pad", "client · live",
+     ["Order book for a tailoring shop in Damak (est. 1999): bills, customer",
+      "measurements, payments and order status, built for the counter."],
+     ["Next.js", "TypeScript", "PostgreSQL", "Drizzle", "Better Auth"]),
+    ("04", "Sajilo Bus Ticket", "live demo",
      ["Bus booking with a Django REST API and a React frontend. Safe seat",
       "holds, eSewa payments and printable QR tickets."],
      ["Django REST", "React", "PostgreSQL", "JWT", "eSewa"]),
-    ("03", "Portfolio", "TypeScript",
-     ["My personal portfolio site, live at armankhan.com.np.",
-      "Projects, background and the stack I work with."],
-     ["React", "TypeScript", "Vite", "Tailwind CSS"]),
-    ("04", "Nepal Patra", "JavaScript",
-     ["A Nepal-focused news aggregator with categories, search,",
-      "bookmarks and a system-aware dark mode."],
-     ["React", "Vite", "Axios", "Tailwind CSS"]),
 ]
 
-BUTTONS = ["portfolio", "linkedin", "instagram", "facebook"]
+BUTTONS = ["portfolio", "resume", "email", "linkedin"]
 
 
 def main():
@@ -213,7 +213,7 @@ def main():
         old.unlink()
     for mode, t in THEMES.items():
         files = {"hero": hero(t), "stack": stack(t), "footer": footer(t),
-                 "head-work": heading("01", "Selected work", "4 of 13 repos", t),
+                 "head-work": heading("01", "Selected work", "all live", t),
                  "head-stack": heading("02", "Stack", "", t),
                  "head-commits": heading("03", "Contributions", "last 12 months", t)}
         for p in PROJECTS:
