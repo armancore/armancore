@@ -16,8 +16,7 @@ The bug that taught me the most took a week to find. My password reset let anyon
 <a href="https://kiteen.com.np"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-kiteen-nepal-dark.svg?v=14" /><img alt="Kiteen Nepal, client work: online store and admin panel for a kids' shop in Damak." src="assets/work-kiteen-nepal-light.svg?v=14" width="100%" /></picture></a>
 <a href="https://sajilo-bus-neon.vercel.app"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/work-sajilo-bus-ticket-dark.svg?v=14" /><img alt="Sajilo Bus Ticket: bus booking with a Django REST API and React frontend, safe seat holds, eSewa payments and QR tickets." src="assets/work-sajilo-bus-ticket-light.svg?v=14" width="100%" /></picture></a>
 
-**Right now** I'm building websites for local businesses with Next.js and adding features to TriLearn.<br>
-**Other repos:** [Nepal-Patra](https://github.com/armancore/Nepal-Patra) · [movie-app](https://github.com/armancore/movie-app) · [VibeTyper](https://github.com/armancore/VibeTyper) · [expense-tracker](https://github.com/armancore/expense-tracker) · [Weather-App](https://github.com/armancore/Weather-App) · [task-manager](https://github.com/armancore/task-manager) · [ArticleHub](https://github.com/armancore/ArticleHub) · [portfolio](https://github.com/armancore/portfolio) · [Django](https://github.com/armancore/Django) · [ecommerce](https://github.com/armancore/ecommerce)
+**Other repos:** [Nepal-Patra](https://github.com/armancore/Nepal-Patra) · [movie-app](https://github.com/armancore/movie-app) · [VibeTyper](https://github.com/armancore/VibeTyper) · [expense-tracker](https://github.com/armancore/expense-tracker) · [Weather-App](https://github.com/armancore/Weather-App) · [task-manager](https://github.com/armancore/task-manager) · [ArticleHub](https://github.com/armancore/ArticleHub) · [portfolio](https://github.com/armancore/portfolio)
 
 <br>
 
