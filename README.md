@@ -3,7 +3,7 @@
 <a href="https://armankhan.com.np"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-portfolio-dark.svg?v=14" /><img alt="Portfolio" src="assets/btn-portfolio-light.svg?v=14" /></picture></a>
 <a href="https://armankhan.com.np/resume.pdf"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-resume-dark.svg?v=14" /><img alt="Resume (PDF)" src="assets/btn-resume-light.svg?v=14" /></picture></a>
 <a href="mailto:contact@armankhan.com.np"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-email-dark.svg?v=14" /><img alt="Email" src="assets/btn-email-light.svg?v=14" /></picture></a>
-<a href="https://www.linkedin.com/in/techiee-arman"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-linkedin-dark.svg?v=14" /><img alt="LinkedIn" src="assets/btn-linkedin-light.svg?v=14" /></picture></a>
+<a href="https://www.linkedin.com/in/armankhan-dev"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/btn-linkedin-dark.svg?v=14" /><img alt="LinkedIn" src="assets/btn-linkedin-light.svg?v=14" /></picture></a>
 
 I'm Arman, a full-stack developer and IT student in Kathmandu. I build web apps end to end: React and Next.js on the front, Node.js or Django with PostgreSQL behind. I also built the online store for a kids' shop in my hometown, Damak.
 
