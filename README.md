@@ -32,8 +32,4 @@ The bug that taught me the most took a week to find. My password reset let anyon
 
 <br>
 
-### Get in touch
-
-Open to internship and junior developer roles. Email is fastest: **[contact@armankhan.com.np](mailto:contact@armankhan.com.np)** · [Résumé (PDF)](https://armankhan.com.np/resume.pdf) · [LinkedIn](https://www.linkedin.com/in/techiee-arman)
-
 <a href="https://armankhan.com.np"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/footer-dark.svg?v=14" /><img alt="Thanks for stopping by. armankhan.com.np" src="assets/footer-light.svg?v=14" width="100%" /></picture></a>
